@@ -1,11 +1,11 @@
 # The Unraveled Tour - ASP.NET Web Forms Concert Planner
 
-[![CI Build & Smoke Test](https://github.com/joshimaitri11/Unravaled-Tour/actions/workflows/ci.yml/badge.svg)](https://github.com/joshimaitri11/Unravaled-Tour/actions)
+[![CI Build & Smoke Test](https://github.com/joshimaitri11/The-Unravaled-Tour/actions/workflows/ci.yml/badge.svg)](https://github.com/joshimaitri11/The-Unravaled-Tour/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![ASP.NET Web Forms](https://img.shields.io/badge/ASP.NET-Web%20Forms%204.8-purple.svg)](https://dotnet.microsoft.com/)
 [![Mono](https://img.shields.io/badge/Mono-XSP4-blue.svg)](https://www.mono-project.com/)
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-red.svg)](https://www.microsoft.com/sql-server)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/joshimaitri11/Unravaled-Tour)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/joshimaitri11/The-Unravaled-Tour)
 
 A fan-made concert tour and ticket planning web portal built with **ASP.NET Web Forms (C#)** and **Microsoft SQL Server**.
 
@@ -37,7 +37,7 @@ graph TD
 
 ### 1. Clone & Configure
 ```bash
-git clone https://github.com/joshimaitri11/Unravaled-Tour.git
+git clone https://github.com/joshimaitri11/The-Unravaled-Tour.git
 cd unraveled-tour-aspnet
 cp .env.example .env
 ```
@@ -94,7 +94,7 @@ Deploy on Ubuntu / Debian (DigitalOcean, AWS EC2, Hetzner, Linode, Azure VM):
    ```
 2. **Clone and Configure**:
    ```bash
-   git clone https://github.com/joshimaitri11/Unravaled-Tour.git
+   git clone https://github.com/joshimaitri11/The-Unravaled-Tour.git
    cd Unravaled-Tour
    cp .env.example .env
 
