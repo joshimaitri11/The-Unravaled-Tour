@@ -12,7 +12,9 @@
   <asp:Label ID="lblMsg" runat="server" CssClass="err"></asp:Label>
 </div>
 <div class="tw">
-<asp:GridView ID="gvTours" runat="server" DataSourceID="sdsTours" DataKeyNames="TourId" AutoGenerateColumns="false" AllowPaging="true" PageSize="15" CssClass="admin">
+<asp:GridView ID="gvTours" runat="server" DataKeyNames="TourId" AutoGenerateColumns="false" AllowPaging="true" PageSize="15" CssClass="admin"
+  OnPageIndexChanging="gvTours_PageIndexChanging" OnRowEditing="gvTours_RowEditing" OnRowCancelingEdit="gvTours_RowCancelingEdit"
+  OnRowUpdating="gvTours_RowUpdating" OnRowDeleting="gvTours_RowDeleting">
   <Columns>
     <asp:BoundField DataField="TourDate" HeaderText="Date" DataFormatString="{0:yyyy-MM-dd}" ApplyFormatInEditMode="true" />
     <asp:BoundField DataField="City" HeaderText="City" />
@@ -22,10 +24,4 @@
   </Columns>
 </asp:GridView>
 </div>
-<asp:SqlDataSource ID="sdsTours" runat="server" ConnectionString="<%$ ConnectionStrings:UnraveledDb %>" ProviderName="System.Data.SqlClient"
-  SelectCommand="SELECT TourId, TourDate, City, Country, Venue FROM Tours ORDER BY TourDate"
-  UpdateCommand="UPDATE Tours SET TourDate=@TourDate, City=@City, Country=@Country, Venue=@Venue WHERE TourId=@TourId"
-  DeleteCommand="DELETE FROM Tours WHERE TourId=@TourId">
-  <UpdateParameters><asp:Parameter Name="TourDate" Type="DateTime" /></UpdateParameters>
-</asp:SqlDataSource>
 </asp:Content>
