@@ -1,0 +1,28 @@
+# Auto-detect text files and normalize line endings to LF on commit
+* text=auto eol=lf
+
+# Code files
+*.cs text diff=csharp
+*.aspx text
+*.ascx text
+*.master text
+*.config text
+*.sql text
+*.css text
+*.js text
+*.json text
+*.yml text
+*.yaml text
+*.md text
+*.txt text
+*.sh text eol=lf
+
+# Binary media files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,15 @@
+.git
+.github
+.gitignore
+.gitattributes
+.dockerignore
+.vs
+.vscode
+*.md
+README.txt
+LICENSE
+.env
+.env.*
+*.log
+docker-compose*.yml
+mssql-data

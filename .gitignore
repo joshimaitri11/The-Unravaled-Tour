@@ -1,0 +1,55 @@
+# Visual Studio / Visual Studio Code
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.opensdf
+*.sdf
+*.sublime-project
+*.sublime-workspace
+
+# Build and Compilation Artifacts
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.aps
+*.intermediate.manifest
+
+# ASP.NET / IIS Temporary Files
+PrecompiledApp.config
+*.compiled
+*.publishproj
+*.pubxml
+*.publishsettings
+App_Data/*.ldf
+App_Data/*.mdf
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Logs and runtime data
+*.log
+mssql-data/
+docker-compose.override.yml

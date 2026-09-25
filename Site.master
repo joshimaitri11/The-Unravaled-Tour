@@ -1,0 +1,28 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>The Unraveled Tour | Fan Planner</title>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&amp;family=Caveat:wght@600&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="fl" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><ellipse cx="20" cy="9" rx="4.5" ry="7"/><ellipse cx="20" cy="9" rx="4.5" ry="7" transform="rotate(72 20 20)"/><ellipse cx="20" cy="9" rx="4.5" ry="7" transform="rotate(144 20 20)"/><ellipse cx="20" cy="9" rx="4.5" ry="7" transform="rotate(216 20 20)"/><ellipse cx="20" cy="9" rx="4.5" ry="7" transform="rotate(288 20 20)"/></g></symbol></svg>
+<form id="form1" runat="server">
+<header>
+  <a class="logo" href="Home.aspx"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#E95B9F" stroke-width="2.4" stroke-linecap="round"><path d="M17 29C5 20 4 11 10 8c4-2 7 1 7 4 0-3 3-6 7-4 6 3 5 12-7 21z"/><path d="M17 29c3 3 8 2 10 4" stroke="#171417" stroke-width="1.6"/></svg>unraveled</a>
+  <nav>
+    <a href="Home.aspx">HOME</a>
+    <a href="Tours.aspx">TOUR DATES</a>
+    <a href="Plan.aspx">PLAN YOUR CONCERT</a>
+    <asp:HyperLink ID="lnkAdmin" runat="server" NavigateUrl="~/Admin.aspx" Visible="false">ADMIN</asp:HyperLink>
+    <asp:LinkButton ID="lnkOut" runat="server" OnClick="lnkOut_Click" CausesValidation="false">LOG OUT</asp:LinkButton>
+  </nav>
+</header>
+<main><asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder></main>
+<footer class="hw">a fan-made college project, not affiliated with Olivia Rodrigo or Live Nation. dates from the official tour poster.</footer>
+</form>
+<script src="site.js"></script>
+</body>
+</html>
