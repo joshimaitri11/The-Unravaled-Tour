@@ -106,7 +106,17 @@ Deploy on Ubuntu / Debian (DigitalOcean, AWS EC2, Hetzner, Linode, Azure VM):
    ```
 4. Configure a reverse proxy (e.g. Nginx, Caddy, or Traefik) to map `http://localhost:5000` to port 80/443 with HTTPS.
 
-### Option 2: Azure Container Apps / AWS ECS
+### Option 3: Deploy to Render
+Deploy directly to Render with the included `render.yaml` blueprint:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/joshimaitri11/The-Unravaled-Tour)
+
+1. Click the **Deploy to Render** button above or go to [Render Dashboard](https://dashboard.render.com/) > **New +** > **Blueprint**.
+2. Select your repository: `joshimaitri11/The-Unravaled-Tour`.
+3. Provide your `UNRAVELED_DB` SQL Server connection string under Environment Variables (e.g. from a free Azure SQL instance or cloud MSSQL).
+4. Click **Apply** to deploy. Render automatically builds the container, binds to `$PORT`, and serves the live site with automatic HTTPS.
+
+### Option 4: Azure Container Apps / AWS ECS
 The repository includes a standalone [`Dockerfile`](Dockerfile) with dynamic `PORT` binding and healthchecks ready to be built and pushed to Docker Hub or GitHub Container Registry (GHCR):
 
 ```bash

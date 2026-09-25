@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: the-unraveled-tour
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /Default.aspx
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ADMIN_EMAIL
+        value: admin@unraveled.fan
+      - key: UNRAVELED_DB
+        sync: false
