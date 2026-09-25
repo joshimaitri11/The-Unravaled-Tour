@@ -1,0 +1,19 @@
+{
+  "name": "The Unraveled Tour (ASP.NET Web Forms)",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "web",
+  "workspaceFolder": "/app",
+  "forwardPorts": [5000],
+  "portsAttributes": {
+    "5000": {
+      "label": "The Unraveled Tour Portal",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["Default.aspx"]
+    }
+  }
+}

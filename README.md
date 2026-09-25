@@ -5,7 +5,7 @@
 [![ASP.NET Web Forms](https://img.shields.io/badge/ASP.NET-Web%20Forms%204.8-purple.svg)](https://dotnet.microsoft.com/)
 [![Mono](https://img.shields.io/badge/Mono-XSP4-blue.svg)](https://www.mono-project.com/)
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-red.svg)](https://www.microsoft.com/sql-server)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](https://www.docker.com/)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/joshimaitri11/Unravaled-Tour)
 
 A fan-made concert tour and ticket planning web portal built with **ASP.NET Web Forms (C#)** and **Microsoft SQL Server**.
 
@@ -74,9 +74,18 @@ docker compose down
 
 ---
 
-## ☁️ Production Deployment
+## ☁️ Deployment
 
-### Option 1: VPS / Cloud VM (Docker Compose)
+### Option 1: 1-Click Launch on GitHub (Codespaces)
+Run the entire application stack in GitHub's cloud environment with no local setup needed:
+
+1. Click the **Open in GitHub Codespaces** badge or click the green **Code** button > **Codespaces** > **Create codespace on main**.
+2. GitHub automatically starts the Docker Compose stack (Mono XSP4 + SQL Server + Database seed).
+3. The forwarded port notification will automatically open your live browser preview at `https://<codespace-id>-5000.app.github.dev/Default.aspx`.
+
+---
+
+### Option 2: VPS / Cloud VM (Docker Compose)
 Deploy on Ubuntu / Debian (DigitalOcean, AWS EC2, Hetzner, Linode, Azure VM):
 
 1. **Install Docker Engine**:
@@ -85,9 +94,10 @@ Deploy on Ubuntu / Debian (DigitalOcean, AWS EC2, Hetzner, Linode, Azure VM):
    ```
 2. **Clone and Configure**:
    ```bash
-   git clone https://github.com/Khusavant/unraveled-tour-aspnet.git
-   cd unraveled-tour-aspnet
+   git clone https://github.com/joshimaitri11/Unravaled-Tour.git
+   cd Unravaled-Tour
    cp .env.example .env
+
    # Update MSSQL_SA_PASSWORD in .env with a secure password
    ```
 3. **Launch in Background**:
